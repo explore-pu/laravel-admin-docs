@@ -1,0 +1,23 @@
+{
+  "name": "laravel-admin-docs",
+  "version": "1.0.0",
+  "description": "development documentation for laravel-admin",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "keywords": [
+    "laravel-admin",
+    "documentation"
+  ],
+  "author": "xiaozhi",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.3.3"
+  },
+  "dependencies": {
+    "vue": "^3.4.38"
+  }
+}
