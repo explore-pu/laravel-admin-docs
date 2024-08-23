@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // base: '/laravel-admin-docs/',
+  base: '/laravel-admin/',
   outDir: 'docs',
   title: "laravel-admin",
   description: "laravel-admin,laravel-admin document,a tool to quickly build back-office management",
