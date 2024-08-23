@@ -24,8 +24,6 @@ admin_toastr('Message...', 'success', ['timeOut' => 5000]);
 
 ![wx20180822-200500](https://user-images.githubusercontent.com/1479100/44462262-a9b60500-a646-11e8-84d1-ee22b35106bd.png)
 
-在版本`v1.5.19`中调整并优化了在在页面添加Alert消息，
-
 ```php
 <?php
 

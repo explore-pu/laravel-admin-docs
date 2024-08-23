@@ -48,7 +48,7 @@ Route::resource('users', 'UserController')->names('users');
 
 打开菜单管理页 `http://localhost/auth/menus` 添加对应的menu, 然后就能在后台管理页面的左侧边栏看到用户管理页面的链接入口了。
 
-> 如果要添加外部链接，只要填写完整的url即可，比如`http://laravel-admin.org/`.
+> 如果要添加外部链接，只要填写完整的url即可，比如`https://laravel.com/`.
 
 ## 编写CURD页面逻辑
 

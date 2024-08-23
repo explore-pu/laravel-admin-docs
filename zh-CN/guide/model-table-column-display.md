@@ -346,7 +346,7 @@ $table->column('progress')->progressBar();
 
 // 可选参数
 $table->column('progress')->progressBar($style = 'primary', $size = 'sm', $max = 100);
-$style`用来设置样式，可选值`danger`、`warning`、`info`、`primary`、`default`、`success
+// $style`用来设置样式，可选值`danger`、`warning`、`info`、`primary`、`default`、`success
 ```
 
 `$size`用来设置尺寸, 可选值为`sm`、`xs`、`xxs`，`$max`用来设置最大范围。
@@ -430,7 +430,7 @@ $table->column('status')->using([
 
 ![WX20190830-001824](https://user-images.githubusercontent.com/1479100/63958089-3eeea380-cabc-11e9-9a3e-0f3a22ae9756.png)
 
-> 注意：在使用这个方法之前，请先阅读[【自定义操作-行操作】](https://laravel-admin.org/docs/zh/1.x/model-table-custom-actions#行操作)
+> 注意：在使用这个方法之前，请先阅读[【自定义操作-行操作】](/zh-CN/guide/model-table-custom-actions.md#行操作)
 
 这个功能可以将某一列显示为一个可操作的按钮，比如上图所示是一个`标星`和`取消标星`的列操作，点击这一列的星标图标之后, 后台会切换字段的状态，页面图标也跟着切换，具体实现代码如下：
 

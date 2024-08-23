@@ -1,6 +1,6 @@
 # 自定义头部导航条
 
-从版本`1.5.6`开始，可以在顶部导航条上添加html元素了, 打开`app/Admin/bootstrap.php`：
+可以在顶部导航条上添加html元素, 打开`app/Admin/bootstrap.php`：
 
 ```php
 use Elegant\Utils\Facades\Admin;
@@ -20,7 +20,7 @@ Admin::navbar(function (\Elegant\Utils\Widgets\Navbar $navbar) {
 
 举个例子，比如在左边添加一个搜索条，先创建一个blade视图`resources/views/search-bar.blade.php`：
 
-```php
+```html
 <style>
 
 .search-form {
@@ -42,7 +42,7 @@ Admin::navbar(function (\Elegant\Utils\Widgets\Navbar $navbar) {
 
 </style>
 
-<form action="/admin/posts" method="get" class="search-form" pjax-container>
+<form action="/posts" method="get" class="search-form"  id="pjax-container">
     <div class="input-group input-group-sm ">
         <input type="text" name="title" class="form-control" placeholder="Search...">
         <span class="input-group-btn">

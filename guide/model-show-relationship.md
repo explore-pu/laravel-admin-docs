@@ -94,6 +94,6 @@ $show->comments('评论', function ($comments) {
 });
 ```
 
-`$comments`是一个`Elegant\Utils\Table`实例，详细的使用方法可以参考[model-table](https://laravel-admin.org/docs/zh/1.x/model-table.md)
+`$comments`是一个`Elegant\Utils\Table`实例，详细的使用方法可以参考[model-table](/zh-CN/guide/model-table.md)
 
 > 注意：为了能够正常使用这个数据表格的功能，必须用`resource()`方法设置`comments`资源的url访问路径

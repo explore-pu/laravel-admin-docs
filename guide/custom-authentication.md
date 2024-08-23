@@ -56,7 +56,7 @@ interface Authenticatable {
 }
 ```
 
-上面interface每个方法的解释参考[adding-custom-user-providers](https://laravel.com/docs/5.5/authentication#adding-custom-user-providers)
+上面interface每个方法的解释参考[adding-custom-user-providers](https://laravel.com/docs/11.x/authentication#adding-custom-user-providers)
 
 定义好了`User provider`之后，打开`app/Providers/AuthServiceProvider.php`注册它：
 

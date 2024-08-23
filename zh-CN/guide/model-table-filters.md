@@ -15,13 +15,7 @@ $table->filter(function($filter){
 });
 ```
 
-## v1.5.18更新内容
-
-`v1.5.8`版本对过滤查询做了下面的调整和更新
-
 ## 样式调整
-
-> v1.5.18版本及以上支持
 
 对过滤查询面板的样式做了调整，从原来的弹出modal改为嵌入表格头部，通过点击筛选按钮展开显示，默认是不展开的，用下面的方式可以让它默认展开：
 
@@ -33,11 +27,7 @@ $table->expandFilter();
 $filter->expand();
 ```
 
-效果参考[Demo](http://demo.laravel-admin.org/posts)
-
 ## 定义查询范围
-
-> v1.5.18版本及以上支持
 
 可以把你最常用的查询定义为一个查询范围，它将会出现在筛选按钮的下拉菜单中，下面是几个例子：
 
@@ -59,7 +49,7 @@ $filter->scope('trashed', '被软删除的数据')->onlyTrashed();
 
 `scope`方法第一个参数为查询的key, 会出现的url参数中，第二个参数是下拉菜单项的label, 如果不填，第一个参数会作为label显示
 
-`scope`方法可以链式调用任何`eloquent`查询条件，效果参考[Demo](http://demo.laravel-admin.org/posts)
+`scope`方法可以链式调用任何`eloquent`查询条件
 
 ## 查询类型
 
@@ -388,8 +378,6 @@ $filter->column(1/2, function ($filter) {
 column`方法的第一个参数设置列宽度，可以设置为比例`1/2`或`0.5`，或者bootstrap的栅格列宽度比如`6`，如果三列的话可以设置为`1/3`或者`4
 ```
 
-效果参考[DEMO](http://demo.laravel-admin.org/posts)
-
 ![wx20180909-211708](https://user-images.githubusercontent.com/1479100/45264860-c9865f00-b475-11e8-8418-a3bdb2a834ab.png)
 
 ## 过滤器组
@@ -448,5 +436,3 @@ $group->startWith();
 // 以输入的内容结尾
 $group->endWith();
 ```
-
-效果参考[DEMO](http://demo.laravel-admin.org/posts)

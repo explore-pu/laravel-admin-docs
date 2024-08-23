@@ -142,7 +142,7 @@ array (
 ```php
 $table->column('tags')->pluck('name')->map('ucwords')->implode('-');
 
-"Php-Python"
+// "Php-Python"
 ```
 
 ## 混合使用

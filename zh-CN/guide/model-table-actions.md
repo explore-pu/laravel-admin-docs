@@ -45,7 +45,7 @@ $table->disableBatchActions();
 
 ## 自定义操作
 
-> 从v1.7.3版本开始，以下文档废弃，请不要再使用。请使用[文档](https://laravel-admin.org/docs/zh/1.x/model-table-custom-actions).
+> 以下文档废弃，请不要再使用。请使用[文档](/zh-CN/guide/model-table-custom-actions.md).
 
 如果有自定义的操作按钮，可以通过下面的方式添加：
 
@@ -83,7 +83,7 @@ class CheckRow
     {
         return <<<SCRIPT
 
-$('.grid-check-row').on('click', function () {
+$('.table-check-row').on('click', function () {
 
     // Your code.
     console.log($(this).data('id'));
@@ -97,7 +97,7 @@ SCRIPT;
     {
         Admin::script($this->script());
 
-        return "<a class='btn btn-xs btn-success fa fa-check grid-check-row' data-id='{$this->id}'></a>";
+        return "<a class='btn btn-xs btn-success fa fa-check table-check-row' data-id='{$this->id}'></a>";
     }
 
     public function __toString()

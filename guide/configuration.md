@@ -307,7 +307,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | You can find all available extensions here
-    | https://github.com/laravel-admin-extensions.
+    | https://github.com/laravel-admin-utils.
     |
     */
     'extensions' => [

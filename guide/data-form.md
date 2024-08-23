@@ -113,7 +113,7 @@ class UserController extends Controller
 
 ## 表单路由注册
 
-在`v1.8.*`版本可以直接使用将表单注册路由，免去了创建控制器这一步
+可以直接使用将表单注册路由，免去了创建控制器这一步
 
 先将表单放在控制器目录中，`app/Admin/Controllers/Setting.php`，然后在`app/Admin/routes.php`中注册路由：
 

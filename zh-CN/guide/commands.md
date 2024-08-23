@@ -32,7 +32,7 @@ Available commands:
 
 ## artisan admin:make
 
-这个命令用来创建admin控制器，传入一个model，它会根据model对应表的字段，默认构建出所需的grid，form和show三个页面的代码，
+这个命令用来创建admin控制器，传入一个model，它会根据model对应表的字段，默认构建出所需的table，form和show三个页面的代码，
 
 ```shell
 $ php artisan admin:make PostController --model=App\\Models\\Post

@@ -46,4 +46,4 @@ QQ群:167834740
 
 ## License
 
-`laravel-admin` is licensed under [The MIT License (MIT)](https://laravel-admin.org/docs/zh/1.x/LICENSE).
+`laravel-admin` is licensed under [The MIT License (MIT)](https://github.com/explore-pu/laravel-admin/blob/main/LICENSE).

@@ -1,6 +1,6 @@
 # 头部和脚部
 
-`v1.6.10`版本之后，在表格的上增加了头部和脚部两个区块，可以在里面填入你想要的内容
+在表格的上增加了头部和脚部两个区块，可以在里面填入你想要的内容
 
 ```php
 $table->header(function ($query) {
@@ -32,7 +32,7 @@ $table->header(function ($query) {
 });
 ```
 
-然后使用图表插件[chartjs](https://github.com/laravel-admin-extensions/chartjs)，来构建图表, 视图文件`resources/views/admin/chart/gender.blade.php`如下
+然后使用图表插件[chartjs](https://github.com/laravel-admin-utils/chartjs)，来构建图表, 视图文件`resources/views/admin/chart/gender.blade.php`如下
 
 ```html
 <canvas id="doughnut" width="200" height="200"></canvas>

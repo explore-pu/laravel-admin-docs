@@ -153,7 +153,7 @@ $form->radioCard($column[, $label])->options(['m' => 'Female', 'f'=> 'Male'])->d
 
 ![checkbox](https://user-images.githubusercontent.com/1479100/82288312-cd051400-99d4-11ea-86cb-dc1f36c1f1a5.png)
 
-`checkbox`能处理两种数据存储情况，参考[多选](https://laravel-admin.org/docs/zh/1.x/model-form-fields#多选)
+`checkbox`能处理两种数据存储情况，参考[多选](/zh-CN/guide/model-form-fields.md#多选)
 
 `options()`方法用来设置选择项:
 
@@ -325,7 +325,7 @@ class Post extends Models
 $form->multipleSelect('tags')->options(Tag::all()->pluck('name', 'id'));
 ```
 
-第二种是将选项数组存储到单字段中，如果字段是字符串类型，那就需要在模型里面为该字段定义[访问器和修改器](https://laravel.com/docs/5.5/eloquent-mutators)来存储和读取了。
+第二种是将选项数组存储到单字段中，如果字段是字符串类型，那就需要在模型里面为该字段定义[访问器和修改器](https://laravel.com/docs/11.x/eloquent-mutators)来存储和读取了。
 
 比如字段`tags`以字符串的形式存储，并且以逗号`,`分隔，那么像下面一样定义它的访问器和修改器：
 
@@ -555,17 +555,17 @@ $form->slider($column[, $label])->options([
 
 ## 富文本编辑
 
-富文本编辑组件在v1.7.0版本之后移除，请选择使用下面的富文本编辑器扩展：
+选择使用下面的富文本编辑器扩展：
 
 | 扩展        | URL                                                     |
 | ----------- | ------------------------------------------------------- |
-| wangEditor  | https://github.com/laravel-admin-extensions/wangEditor  |
-| wangEditor2 | https://github.com/laravel-admin-extensions/wangEditor2 |
-| UEditor     | https://github.com/laravel-admin-extensions/UEditor     |
-| Summernote  | https://github.com/laravel-admin-extensions/summernote  |
-| Quill       | https://github.com/laravel-admin-extensions/quill       |
-| CKEditor    | https://github.com/laravel-admin-extensions/ckeditor    |
-| Simditor    | https://github.com/laravel-admin-extensions/simditor    |
+| wangEditor  | https://github.com/laravel-admin-utils/wangEditor  |
+| wangEditor2 | https://github.com/laravel-admin-utils/wangEditor2 |
+| UEditor     | https://github.com/laravel-admin-utils/UEditor     |
+| Summernote  | https://github.com/laravel-admin-utils/summernote  |
+| Quill       | https://github.com/laravel-admin-utils/quill       |
+| CKEditor    | https://github.com/laravel-admin-utils/ckeditor    |
+| Simditor    | https://github.com/laravel-admin-utils/simditor    |
 
 ## 隐藏域
 
@@ -588,7 +588,7 @@ $form->switch($column[, $label])->states($states);
 
 ## 经纬度选择
 
-地图组件在v1.7.0版本之后移除，请使用[经纬度选择器插件](https://github.com/laravel-admin-extensions/latlong)代替
+使用[经纬度选择器插件](https://github.com/laravel-admin-utils/latlong)
 
 ## 纯显示
 

@@ -16,7 +16,7 @@ class Post extends Model
 }
 ```
 
-这样在grid列表中显示的数据都是未被删除的数据
+这样在table列表中显示的数据都是未被删除的数据
 
 ```php
 $table = new Table(new Post);

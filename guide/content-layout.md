@@ -20,7 +20,7 @@
 
 ## 页面内容
 
-`laravel-admin`的布局可参考后台首页的布局文件[HomeController.php](https://github.com/z-song/laravel-admin/blob/master/src/Console/stubs/HomeController.stub)的`index()`方法。
+`laravel-admin`的布局可参考后台首页的布局文件[HomeController.php](https://github.com/explore-pu/laravel-admin/blob/main/src/Console/stubs/HomeController.stub)的`index()`方法。
 
 `Elegant\Utils\Layout\Content`类用来实现内容区的布局。`Content::body($content)`方法用来添加页面内容：
 
@@ -83,7 +83,7 @@ class ProductController
 
 然后定义视图文件`resources/product/show.blade.php`:
 
-```php
+```html
 <div class="box box-solid">
     <div class="box-header with-border">
         <i class="fa fa-text-width"></i>
@@ -100,7 +100,7 @@ class ProductController
 </div>
 ```
 
-`laravel-admin`使用`adminlte2`作为前端框架，视图文件的样式，可以参考[adminte](https://adminlte.io/themes/AdminLTE/pages/UI/general.html)编写。
+`laravel-admin`使用`adminlte3`作为前端框架，视图文件的样式，可以参考[adminte](https://adminlte.io/themes/v3/)编写。
 
 ## 布局
 

@@ -36,7 +36,7 @@ $table->column('day')->editable('day');
 
 ## switch开关
 
-> 注意：在`grid`中对某字段设置了`switch`，同时需要在`form`里面对该字段设置同样的`switch`
+> 注意：在`table`中对某字段设置了`switch`，同时需要在`form`里面对该字段设置同样的`switch`
 
 快速将列变成开关组件，使用方法如下：
 
@@ -53,7 +53,7 @@ $table->column('status')->switch($states);
 
 ## switchGroup开关组
 
-> 注意：在`grid`中对某些字段设置了`switch`，同时需要在`form`里面对这些字段设置同样的`switch`
+> 注意：在`table`中对某些字段设置了`switch`，同时需要在`form`里面对这些字段设置同样的`switch`
 
 快速将列变成开关组件组，使用方法如下：
 

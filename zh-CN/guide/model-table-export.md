@@ -19,7 +19,7 @@ $table->export(function ($export) {
         return $value;
     });
 });
-$export->filename($filename);`用来指定导出文件的名称，不设置的话默认为`表名.csv
+// $export->filename($filename);`用来指定导出文件的名称，不设置的话默认为`表名.csv
 ```
 
 `$export->except([]);`用来指定哪些列不需要被导出，指定了之后，相关的列将不会被导出, 反之，使用`$export->only([]);`方法用来指定只能导出哪些列。
@@ -42,7 +42,7 @@ $export->column('column_5', function ($value, $original) {
 
 ## Laravel-Excel v3.*
 
-在`v1.6.12`版本之后增加了对`Laravel-Excel 3.*`版本的导出支持。
+增加了对`Laravel-Excel 3.*`版本的导出支持。
 
 首先按照文档安装好[Laravel-Excel](https://github.com/Maatwebsite/Laravel-Excel)。
 
@@ -67,7 +67,7 @@ class PostsExporter extends ExcelExporter
 }
 ```
 
-然后在Grid中使用这个导出类：
+然后在table中使用这个导出类：
 
 ```php
 use App\Admin\Extensions\PostsExporter;

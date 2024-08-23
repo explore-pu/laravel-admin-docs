@@ -258,7 +258,7 @@ use Elegant\Utils\Form;
 Form::extend('php', PHPEditor::class);
 ```
 
-这样就能在[model-form](https://laravel-admin.org/docs/zh/1.x/model-form.md)中使用PHP编辑器了：
+这样就能在[model-form](/zh-CN/guide/model-form.md)中使用PHP编辑器了：
 
 ```php
 $form->php('code');

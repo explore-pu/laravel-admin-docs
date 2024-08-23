@@ -32,8 +32,6 @@ $show->contents()->as(function ($content) {
 $show->avatar()->image();
 ```
 
-`image()`方法的参数参考[Field::image()](https://github.com/z-song/laravel-admin/blob/8c1888392b063a56b0f096d3bb2a7c72aa846f31/src/Show/Field.php#L200)
-
 ## file
 
 字段`document`的内容是文件的路径或者url，可以将它显示为文件：
@@ -41,8 +39,6 @@ $show->avatar()->image();
 ```php
 $show->avatar()->file();
 ```
-
-`file()`方法的参数参考[Field::file()](https://github.com/z-song/laravel-admin/blob/8c1888392b063a56b0f096d3bb2a7c72aa846f31/src/Show/Field.php#L235)
 
 ## link
 
@@ -52,8 +48,6 @@ $show->avatar()->file();
 $show->homepage()->link();
 ```
 
-`link()`方法的参数参考[Field::link()](https://github.com/z-song/laravel-admin/blob/8c1888392b063a56b0f096d3bb2a7c72aa846f31/src/Show/Field.php#L289)
-
 ## label
 
 将字段`tag`的内容显示为label：
@@ -61,8 +55,6 @@ $show->homepage()->link();
 ```php
 $show->tag()->label();
 ```
-
-`label()`方法的参数参考[Field::label()](https://github.com/z-song/laravel-admin/blob/8c1888392b063a56b0f096d3bb2a7c72aa846f31/src/Show/Field.php#L305)
 
 ## badge
 
@@ -72,8 +64,6 @@ $show->tag()->label();
 $show->rate()->badge();
 ```
 
-`badge()`方法的参数参考[Field::badge()](https://github.com/z-song/laravel-admin/blob/8c1888392b063a56b0f096d3bb2a7c72aa846f31/src/Show/Field.php#L325)
-
 ## json
 
 将字段`extra`的内容显示为json格式输出：
@@ -81,8 +71,6 @@ $show->rate()->badge();
 ```php
 $show->extra()->json();
 ```
-
-`json()`方法的参数参考[Field::json()](https://github.com/z-song/laravel-admin/blob/8c1888392b063a56b0f096d3bb2a7c72aa846f31/src/Show/Field.php#L343)
 
 ## using
 

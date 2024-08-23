@@ -273,7 +273,7 @@ export default defineConfig({
           link: '/guide/custom-navbar'
         },
         {
-          text: '常见问题',
+          text: 'faqs',
           link: '/guide/qa'
         }
       ],

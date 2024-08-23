@@ -1,7 +1,5 @@
 # 数据模型详情
 
-> v1.5.16版本及以上支持
-
 从表格操作列的`眼睛`图表按钮或者`显示`点击进入数据的详情显示页面
 
 以下面的`posts`表为例：
@@ -91,7 +89,7 @@ $show->avatar()->unescape()->as(function ($avatar) {
 $show->panel()
     ->style('danger')
     ->title('post基本信息...');
-style`的取值可以是`primary`、`info`、`danger`、`warning`、`default
+// style`的取值可以是`primary`、`info`、`danger`、`warning`、`default
 ```
 
 ## 面板工具设置
@@ -104,5 +102,5 @@ $show->panel()
         $tools->disableEdit();
         $tools->disableList();
         $tools->disableDelete();
-    });;
+    });
 ```

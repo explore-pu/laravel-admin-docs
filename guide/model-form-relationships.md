@@ -263,8 +263,6 @@ $form->checkbox('roles', '角色')->options(Role::all()->pluck('name', 'id'));
 
 ## 归属选择
 
-归属关系选择是`v1.8.0`新增的功能，也是比较常用的场景。
-
 以下面的文章表和用户表为例，每一篇文章都归属于一个用户（作者）
 
 ```php
@@ -343,7 +341,7 @@ class Users extends Selectable
 
 列表选择类中，`$model`属性用来指定列表的模型，列表默认数据为`10`条，可以使用属性 `protected $perPage = 5;`来设置每页数量。
 
-`make`方法用来构建列表，使用方法参考 [model-table 文档](https://laravel-admin.org/docs/zh/1.x/model-table.md)
+`make`方法用来构建列表，使用方法参考 [model-table 文档](/zh-CN/guide/model-table.md)
 
 下面是在表单中使用它：
 

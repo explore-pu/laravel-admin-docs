@@ -5,14 +5,14 @@ layout: home
 hero:
   name: "Laravel-admin"
   text: "A tool to quickly build back-office management"
-  tagline: It provides features such as page components and form elements that help you implement full-fledged backend management with very little code
+  tagline: English documentation needs to be translated, hope someone can help, thank you very much, If you'd like more language support, welcome to the new language documentation
   image:
     src: /logo.png
     alt: laravel-admin
   actions:
     - theme: brand
       text: start
-      link: /markdown-examples
+      link: /guide
 
 features:
   - icon: 📄

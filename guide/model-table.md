@@ -26,7 +26,7 @@ $table = new Table(new Movie);
 // 第一列显示id字段，并将这一列设置为可排序列
 $table->column('id', 'ID')->sortable();
 
-// 第二列显示title字段，由于title字段名和Grid对象的title方法冲突，所以用Grid的column()方法代替
+// 第二列显示title字段，由于title字段名和table对象的title方法冲突，所以用table的column()方法代替
 $table->column('title');
 
 // 第三列显示director字段，通过display($callback)方法设置这一列的显示内容为users表中对应的用户名
@@ -98,7 +98,7 @@ $table->model()->take(100);
 ...
 ```
 
-`$table->model()`后面可以直接调用`Eloquent`的查询方法来给表格数据添加查询条件，更多查询方法参考[文档](https://laravel.com/docs/5.8/queries).
+`$table->model()`后面可以直接调用`Eloquent`的查询方法来给表格数据添加查询条件，更多查询方法参考[文档](https://laravel.com/docs/11.x/queries).
 
 ## 设置每页显示行数
 
@@ -227,7 +227,7 @@ class Profile extends Model
 }
 ```
 
-通过下面的代码可以关联在一个grid里面:
+通过下面的代码可以关联在一个table里面:
 
 ```php
 $table = new Table(new User);
@@ -281,7 +281,7 @@ class Comment extends Model
 }
 ```
 
-通过下面的代码可以让两个模型在grid里面互相关联:
+通过下面的代码可以让两个模型在table里面互相关联:
 
 ```php
 $table = new Table(new Post);
@@ -345,7 +345,7 @@ class Role extends Model
 }
 ```
 
-通过下面的代码可以让两个模型在grid里面互相关联:
+通过下面的代码可以让两个模型在table里面互相关联:
 
 ```php
 $table = new Table(new User);

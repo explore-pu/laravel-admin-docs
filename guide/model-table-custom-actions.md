@@ -1,6 +1,6 @@
 # 自定义行&批量操作
 
-`v1.7.3`版本对数据表格的`行操作`和`批量操作`进行了重构，数据的行操作重构为`下拉菜单`的形式：
+数据的行操作为`下拉菜单`的形式：
 
 ![WX20190722-103545](https://user-images.githubusercontent.com/1479100/61602515-8176c200-ac6c-11e9-8ecb-dffb5768ab4f.png)
 
@@ -13,7 +13,7 @@
 假设你要在文章列表的操作中增加一个`复制`的操作，点击之后复制这一行的数据，先运行下面的命令生成操作类：
 
 ```shell
-php artisan admin:action Post\\Replicate --grid-row --name="复制"
+php artisan admin:action Post\\Replicate --table-row --name="复制"
 ```
 
 > 类名称指定为`Post\\Replicate`，只是为了把这个操作类放到`Post`这个命名空间下，可以根据你的模块，指定任何空间。
@@ -102,7 +102,7 @@ class Comments extends RowAction
 假设你还要增加一个`批量复制`的操作，先运行下面的命令生成批量操作类：
 
 ```shell
-php artisan admin:action Post\\BatchReplicate --grid-batch --name="批量复制"
+php artisan admin:action Post\\BatchReplicate --table-batch --name="批量复制"
 ```
 
 生成类文件`app/Admin/Actions/Post/BatchReplicate.php`：
@@ -531,15 +531,13 @@ $table->setActionClass(ContextMenuActions::class);
 或者在`config/admin.php`添加配置全局开启：
 
 ```php
-'grid_action_class' => \Elegant\Utils\Table\Displayers\ContextMenuActions::class,
+'table_action_class' => \Elegant\Utils\Table\Displayers\ContextMenuActions::class,
 ```
 
-## 旧版本兼容
-
-如果是从低版本更新到`v1.7.3`及以上的版本，还可以继续使用之前自定义的操作类，但是如果要使用新版本的`行操作`，可以在`config/admin.php`添加配置全局开启：
+## 下拉菜单
 
 ```php
-'grid_action_class' => \Elegant\Utils\Table\Displayers\DropdownActions::class,
+'table_action_class' => \Elegant\Utils\Table\Displayers\DropdownActions::class,
 ```
 
 或者在每个表格中单独开启：
@@ -552,7 +550,7 @@ $table->setActionClass(DropdownActions::class);
 
 ## 切换操作列的形式
 
-目前表格的操作列支持三种形式的操作按钮，`图标按钮`、`下拉菜单`、`右键菜单`，`图标按钮`是最原始的按钮形式，另外两个是在v1.7版本之后新增的，目的是方便自定义更多的行操作。
+目前表格的操作列支持三种形式的操作按钮，`图标按钮`、`下拉菜单`、`右键菜单`，`图标按钮`是最原始的按钮形式，`下拉菜单`目的是方便自定义更多的行操作。
 
 如果你想切换这三种形式，可以使用下面的方法。
 
@@ -562,13 +560,13 @@ $table->setActionClass(DropdownActions::class);
 
 ```php
 // 最原始的`按钮图标`形式
-'grid_action_class' => \Elegant\Utils\Table\Displayers\Actions::class,
+'table_action_class' => \Elegant\Utils\Table\Displayers\ButtonActions::class,
 
 // 使用`下拉菜单`形式
-'grid_action_class' => \Elegant\Utils\Table\Displayers\DropdownActions::class,
+'table_action_class' => \Elegant\Utils\Table\Displayers\DropdownActions::class,
 
 // 使用`右键菜单`形式
-'grid_action_class' => \Elegant\Utils\Table\Displayers\ContextMenuActions::class,
+'table_action_class' => \Elegant\Utils\Table\Displayers\ContextMenuActions::class,
 ```
 
 ## 单独配置
@@ -576,12 +574,12 @@ $table->setActionClass(DropdownActions::class);
 也可以给每一个表格指定不同的形式
 
 ```php
-use Elegant\Utils\Table\Displayers\Actions;
+use Elegant\Utils\Table\Displayers\ButtonActions;
 use Elegant\Utils\Table\Displayers\DropdownActions;
 use Elegant\Utils\Table\Displayers\ContextMenuActions;
 
 // 最原始的`按钮图标`形式
-$table->setActionClass(Actions::class);
+$table->setActionClass(ButtonActions::class);
 
 // 使用`下拉菜单`形式
 $table->setActionClass(DropdownActions::class);

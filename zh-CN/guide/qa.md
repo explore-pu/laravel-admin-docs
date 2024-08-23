@@ -4,7 +4,7 @@
 
 ## 为什么这个方法/功能不生效呢？
 
-大概率是版本问题，参考[版本升级](https://laravel-admin.org/docs/zh/1.x/upgrading.md)来升级你的版本。
+大概率是版本问题，参考[版本升级](/zh-CN/guide/upgrading.md)来升级你的版本。
 
 ## 怎么设置语言呢？
 
@@ -24,7 +24,7 @@ Admin::disablePjax();
 
 ## 关于扩展自定义组件
 
-`laravel-admin`默认引用了大量前端资源，如果有网络问题或者有不需要使用的组件，可以参考[form组件管理](https://laravel-admin.org/docs/zh/1.x/model-form-field-management.md)将其移除。
+`laravel-admin`默认引用了大量前端资源，如果有网络问题或者有不需要使用的组件，可以参考[form组件管理](/zh-CN/guide/model-form-field-management.md)将其移除。
 
 关于富文本编辑器，由于静态资源包文件普遍太大，所以`laravel-admin`默认通过cdn的方式引用`ckeditor`，建议大家根据自己的需求扩展编辑器，自行配置。
 
@@ -73,38 +73,6 @@ Route::group([
 ```
 
 a标签上添加`target="_blank"`, 用新页面打开避免使用pjax加载页面。
-
-## 前后台session冲突
-
-如果网站前台和管理后台在同一个Laravel项目中，并且在一个域名下，登录的时候可能会遇到前后台session冲突的问题，在版本v1.6.10之后修复了这个问题，先更新到`v1.6.10`以上，然后在`config/admin.php`的`route.middleware`上加上一个中间件`admin.session`即可
-
-```php
-    'route' => [
-
-        'middleware' => ['web', 'admin', 'admin.session'],
-
-    ],
-```
-
-如果后台使用子域名作为入口比如`admin.example.com`, 和`www.example.com`下的其它项目session冲突，那么可以修改`config/session.php`里面的`cookie`为其它名称（默认为`laravel_session`）。
-
-## 可以去掉权限/角色/日志等功能吗？
-
-你可能只需要用户表，不需要角色、权限、日志等功能，那么可以更新到`v1.7.3`或以上版本，然后打开`config/admin.php`, 设置下面几项：
-
-```php
-'check_route_permission' => false,
-
-'check_menu_roles' => false,
-
-'operation_log' => [
-
-    'enable' => false,
-
-]
-```
-
-然后你可以删掉除了`admin_users`之外的其它`admin_*`表了。
 
 ## Laravel 7.x的日期时间类型字段的显示问题
 
