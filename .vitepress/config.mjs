@@ -2,12 +2,12 @@ import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/laravel-admin/',
+  base: '/laravel-admin-docs/',
   outDir: 'docs',
-  title: "laravel-admin",
+  title: "laravel-admin-docs",
   description: "laravel-admin,laravel-admin document,a tool to quickly build back-office management",
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/laravel-admin-docs/logo.png' }],
     // ['meta', { property: 'og:type', content: 'website' }],
     // ['meta', { name: 'theme-color', content: '#646cff' }],
     // ['script', {
@@ -532,6 +532,7 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-CN',
       link: '/zh-CN/',
+      title: "laravel-admin文档",
       description: "laravel-admin,laravel-admin文档,一个快速构建后台管理的工具",
       themeConfig: {
         search: {
