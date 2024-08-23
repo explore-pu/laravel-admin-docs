@@ -2,6 +2,8 @@
 import { onMounted } from 'vue';
 
 onMounted(() => {
-  window.location.href = 'en';
+  const language = window.navigator.language || window.navigator.userLanguage;
+
+  window.location.href = language !== 'zh-CN' ? 'en' : 'zh-CN';
 });
 </script>
