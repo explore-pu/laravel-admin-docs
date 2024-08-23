@@ -26,6 +26,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Releases', link: 'https://github.com/explore-pu/laravel-admin/releases' },
       { text: 'Utils', link: 'https://github.com/laravel-admin-utils' },
     ],
     socialLinks: [
@@ -559,6 +560,7 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: '首页', link: '/zh-CN' },
+          { text: '版本说明', link: 'https://github.com/explore-pu/laravel-admin/releases' },
           { text: '插件', link: 'https://github.com/laravel-admin-utils' },
         ],
         sidebarMenuLabel: '菜单',
