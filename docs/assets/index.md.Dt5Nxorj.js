@@ -1,0 +1,1 @@
+import{y as e,c as t,o as a}from"./chunks/framework.C61Lbh9p.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),n={name:"index.md"},d=Object.assign(n,{setup(o){return e(()=>{window.location.href="en"}),(r,s)=>(a(),t("div"))}});export{i as __pageData,d as default};

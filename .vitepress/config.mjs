@@ -39,245 +39,249 @@ export default defineConfig({
       pattern: 'https://github.com/explore-pu/laravel-admin-docs/edit/main/:path',
     },
     sidebar: {
-      '/': [
-        {
-          text: 'Summary',
-          items: [
-            {
-              text: 'Guide',
-              link: '/guide/'
-            },
-          ]
-        },
-        {
-          text: 'Starter',
-          collapsed: true,
-          items: [
-            {
-              text: 'Install',
-              link: '/guide/install'
-            },
-            {
-              text: 'Quick Start',
-              link: '/guide/quick-start',
-            },
-            {
-              text: 'Configuration',
-              link: '/guide/configuration',
-            },
-            {
-              text: 'Upgrading',
-              link: '/guide/upgrading'
-            },
-            {
-              text: 'Content Layout',
-              link: '/guide/content-layout'
-            }
-          ]
-        },
-        {
-          text: 'Table',
-          collapsed: true,
-          items: [
-            {
-              text: 'Basic Usage',
-              link: '/guide/model-table'
-            },
-            {
-              text: 'Use of Columns',
-              link: '/guide/model-table-column'
-            },
-            {
-              text: 'Display of Columns',
-              link: '/guide/model-table-column-display'
-            },
-            {
-              text: 'Query Filtering',
-              link: '/guide/model-table-filters'
-            },
-            {
-              text: 'Column Filters',
-              link: '/guide/model-table-column-filter'
-            },
-            {
-              text: 'Inline Editing',
-              link: '/guide/model-table-inline-edit'
-            },
-            {
-              text: 'Data Manipulation',
-              link: '/guide/model-table-actions'
-            },
-            {
-              text: 'Custom Rows & Bulk Actions',
-              link: '/guide/model-table-custom-actions'
-            },
-            {
-              text: 'Data Export',
-              link: '/guide/model-table-export'
-            },
-            {
-              text: 'Head and Footer',
-              link: '/guide/model-table-header-footer'
-            },
-            {
-              text: 'Table Initialized',
-              link: '/guide/model-table-init'
-            },
-            {
-              text: 'Table Statistics',
-              link: '/guide/model-table-total-row'
-            },
-            {
-              text: 'Quick Search',
-              link: '/guide/model-table-quick-search'
-            },
-            {
-              text: 'Spec Selector',
-              link: '/guide/model-table-spec-selector'
-            },
-            {
-              text: 'Quick Creation',
-              link: '/guide/model-table-quick-create'
-            },
-            {
-              text: 'Custom Tools',
-              link: '/guide/model-table-custom-tools'
-            },
-            {
-              text: 'External data sources',
-              link: '/guide/model-table-data'
-            },
-            {
-              text: 'Shortcut Key',
-              link: '/guide/model-table-hotkeys'
-            },
-            {
-              text: 'SoftDelete',
-              link: '/guide/model-table-soft-deletes'
-            }
-          ]
-        },
-        {
-          text: 'Form',
-          collapsed: true,
-          items: [
-            {
-              text: 'Basic Usage',
-              link: '/guide/model-form'
-            },
-            {
-              text: 'Basic Component',
-              link: '/guide/model-form-fields',
-            },
-            {
-              text: 'Image file upload',
-              link: '/guide/model-form-upload',
-            },
-            {
-              text: 'JSON Component',
-              link: '/guide/model-form-json-fields'
-            },
-            {
-              text: 'Relationship Processing',
-              link: '/guide/model-form-relationships'
-            },
-            {
-              text: 'Form linkage',
-              link: '/guide/model-form-linkage'
-            },
-            {
-              text: 'Component management',
-              link: '/guide/model-form-field-management'
-            },
-            {
-              text: 'Form validation',
-              link: '/guide/model-form-validation'
-            },
-            {
-              text: 'Form callbacks',
-              link: '/guide/model-form-callback'
-            },
-            {
-              text: 'Form initialization',
-              link: '/guide/model-form-init'
-            },
-            {
-              text: 'Form layout',
-              link: '/guide/model-form-layout'
-            }
-          ]
-        },
-        {
-          text: 'Show',
-          collapsed: true,
-          items: [
-            {
-              text: 'Basic Usage',
-              link: '/guide/model-show'
-            },
-            {
-              text: 'field display',
-              link: '/guide/model-show-fields',
-            },
-            {
-              text: 'affiliations',
-              link: '/guide/model-show-relationship',
-            },
-            {
-              text: 'Display Extensions',
-              link: '/guide/model-show-extension'
-            }
-          ]
-        },
-        {
-          text: 'Tree',
-          link: '/guide/model-tree'
-        },
-        {
-          text: 'Data Form',
-          link: '/guide/data-form'
-        },
-        {
-          text: 'Localization',
-          link: '/guide/localization'
-        },
-        {
-          text: 'CSS/JavaScript',
-          link: '/guide/frontend'
-        },
-        {
-          text: 'Extended development',
-          link: '/guide/extension-development'
-        },
-        {
-          text: 'Commands',
-          link: '/guide/commands'
-        },
-        {
-          text: 'Page messages',
-          link: '/guide/content-message'
-        },
-        {
-          text: 'widgets',
-          link: '/guide/widgets'
-        },
-        {
-          text: 'Permission control',
-          link: '/guide/permission'
-        },
-        {
-          text: 'Customize Authentication',
-          link: '/guide/custom-authentication'
-        },
-        {
-          text: 'Custom Navbar',
-          link: '/guide/custom-navbar'
-        },
-        {
-          text: 'faqs',
-          link: '/guide/qa'
-        }
-      ],
+      '/en/': {
+        base: '/en',
+        items: [
+          {
+            text: 'Summary',
+            items: [
+              {
+                text: 'Guide',
+                link: '/guide/'
+              },
+            ]
+          },
+          {
+            text: 'Starter',
+            collapsed: true,
+            items: [
+              {
+                text: 'Install',
+                link: '/guide/install'
+              },
+              {
+                text: 'Quick Start',
+                link: '/guide/quick-start',
+              },
+              {
+                text: 'Configuration',
+                link: '/guide/configuration',
+              },
+              {
+                text: 'Upgrading',
+                link: '/guide/upgrading'
+              },
+              {
+                text: 'Content Layout',
+                link: '/guide/content-layout'
+              }
+            ]
+          },
+          {
+            text: 'Table',
+            collapsed: true,
+            items: [
+              {
+                text: 'Basic Usage',
+                link: '/guide/model-table'
+              },
+              {
+                text: 'Use of Columns',
+                link: '/guide/model-table-column'
+              },
+              {
+                text: 'Display of Columns',
+                link: '/guide/model-table-column-display'
+              },
+              {
+                text: 'Query Filtering',
+                link: '/guide/model-table-filters'
+              },
+              {
+                text: 'Column Filters',
+                link: '/guide/model-table-column-filter'
+              },
+              {
+                text: 'Inline Editing',
+                link: '/guide/model-table-inline-edit'
+              },
+              {
+                text: 'Data Manipulation',
+                link: '/guide/model-table-actions'
+              },
+              {
+                text: 'Custom Rows & Bulk Actions',
+                link: '/guide/model-table-custom-actions'
+              },
+              {
+                text: 'Data Export',
+                link: '/guide/model-table-export'
+              },
+              {
+                text: 'Head and Footer',
+                link: '/guide/model-table-header-footer'
+              },
+              {
+                text: 'Table Initialized',
+                link: '/guide/model-table-init'
+              },
+              {
+                text: 'Table Statistics',
+                link: '/guide/model-table-total-row'
+              },
+              {
+                text: 'Quick Search',
+                link: '/guide/model-table-quick-search'
+              },
+              {
+                text: 'Spec Selector',
+                link: '/guide/model-table-spec-selector'
+              },
+              {
+                text: 'Quick Creation',
+                link: '/guide/model-table-quick-create'
+              },
+              {
+                text: 'Custom Tools',
+                link: '/guide/model-table-custom-tools'
+              },
+              {
+                text: 'External data sources',
+                link: '/guide/model-table-data'
+              },
+              {
+                text: 'Shortcut Key',
+                link: '/guide/model-table-hotkeys'
+              },
+              {
+                text: 'SoftDelete',
+                link: '/guide/model-table-soft-deletes'
+              }
+            ]
+          },
+          {
+            text: 'Form',
+            collapsed: true,
+            items: [
+              {
+                text: 'Basic Usage',
+                link: '/guide/model-form'
+              },
+              {
+                text: 'Basic Component',
+                link: '/guide/model-form-fields',
+              },
+              {
+                text: 'Image file upload',
+                link: '/guide/model-form-upload',
+              },
+              {
+                text: 'JSON Component',
+                link: '/guide/model-form-json-fields'
+              },
+              {
+                text: 'Relationship Processing',
+                link: '/guide/model-form-relationships'
+              },
+              {
+                text: 'Form linkage',
+                link: '/guide/model-form-linkage'
+              },
+              {
+                text: 'Component management',
+                link: '/guide/model-form-field-management'
+              },
+              {
+                text: 'Form validation',
+                link: '/guide/model-form-validation'
+              },
+              {
+                text: 'Form callbacks',
+                link: '/guide/model-form-callback'
+              },
+              {
+                text: 'Form initialization',
+                link: '/guide/model-form-init'
+              },
+              {
+                text: 'Form layout',
+                link: '/guide/model-form-layout'
+              }
+            ]
+          },
+          {
+            text: 'Show',
+            collapsed: true,
+            items: [
+              {
+                text: 'Basic Usage',
+                link: '/guide/model-show'
+              },
+              {
+                text: 'field display',
+                link: '/guide/model-show-fields',
+              },
+              {
+                text: 'affiliations',
+                link: '/guide/model-show-relationship',
+              },
+              {
+                text: 'Display Extensions',
+                link: '/guide/model-show-extension'
+              }
+            ]
+          },
+          {
+            text: 'Tree',
+            link: '/guide/model-tree'
+          },
+          {
+            text: 'Data Form',
+            link: '/guide/data-form'
+          },
+          {
+            text: 'Localization',
+            link: '/guide/localization'
+          },
+          {
+            text: 'CSS/JavaScript',
+            link: '/guide/frontend'
+          },
+          {
+            text: 'Extended development',
+            link: '/guide/extension-development'
+          },
+          {
+            text: 'Commands',
+            link: '/guide/commands'
+          },
+          {
+            text: 'Page messages',
+            link: '/guide/content-message'
+          },
+          {
+            text: 'widgets',
+            link: '/guide/widgets'
+          },
+          {
+            text: 'Permission control',
+            link: '/guide/permission'
+          },
+          {
+            text: 'Customize Authentication',
+            link: '/guide/custom-authentication'
+          },
+          {
+            text: 'Custom Navbar',
+            link: '/guide/custom-navbar'
+          },
+          {
+            text: 'faqs',
+            link: '/guide/qa'
+          }
+        ]
+      }
+      ,
       '/zh-CN/': {
         base: '/zh-CN',
         items: [
@@ -527,7 +531,7 @@ export default defineConfig({
     'root': {
       label: 'English',
       lang: 'en',
-      link: '/',
+      link: '/en/',
     },
     'zh-CN': {
       label: '简体中文',
