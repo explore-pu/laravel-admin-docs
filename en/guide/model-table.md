@@ -1,6 +1,6 @@
 # 基于数据模型的表格
 
-`Elegant\Utils\Table`类用于生成基于数据模型的表格，下面以`movies`表为例：
+`Elegance\Admin\Table`类用于生成基于数据模型的表格，下面以`movies`表为例：
 
 ```sql
 movies
@@ -19,7 +19,7 @@ movies
 
 ```php
 use App\Models\Movie;
-use Elegant\Utils\Table;
+use Elegance\Admin\Table;
 
 $table = new Table(new Movie);
 

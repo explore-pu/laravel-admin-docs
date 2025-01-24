@@ -51,7 +51,7 @@ $form->image($column[, $label])->thumbnail([
 ```php
 class Photo extends Model
 {
-    use \Elegant\Utils\Traits\Resizable;
+    use \Elegance\Admin\Traits\Resizable;
 }
 
 // To access thumbnail

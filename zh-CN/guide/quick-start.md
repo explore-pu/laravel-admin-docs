@@ -60,10 +60,10 @@ Route::resource('users', 'UserController')->names('users');
 namespace App\Admin\Controllers;
 
 use App\Models\User;
-use Elegant\Utils\Controllers\AdminController;
-use Elegant\Utils\Form;
-use Elegant\Utils\Table;
-use Elegant\Utils\Show;
+use Elegance\Admin\Controllers\AdminController;
+use Elegance\Admin\Form;
+use Elegance\Admin\Table;
+use Elegance\Admin\Show;
 
 class UserController extends AdminController
 {

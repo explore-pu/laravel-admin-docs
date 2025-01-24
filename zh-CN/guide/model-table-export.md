@@ -53,7 +53,7 @@ $export->column('column_5', function ($value, $original) {
 
 namespace App\Admin\Extensions;
 
-use Elegant\Utils\Table\Exporters\ExcelExporter; 
+use Elegance\Admin\Table\Exporters\ExcelExporter; 
 
 class PostsExporter extends ExcelExporter
 {
@@ -95,7 +95,7 @@ class PostsExporter extends ExcelExporter
 
 namespace App\Admin\Extensions\Export;
 
-use Elegant\Utils\Table\Exporters\ExcelExporter;
+use Elegance\Admin\Table\Exporters\ExcelExporter;
 use Maatwebsite\Excel\Concerns\WithMapping;
 
 class UsersExporter extends ExcelExporter implements WithMapping
@@ -140,7 +140,7 @@ php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider"
 
 namespace App\Admin\Extensions;
 
-use Elegant\Utils\Table\Exporters\AbstractExporter;
+use Elegance\Admin\Table\Exporters\AbstractExporter;
 use Maatwebsite\Excel\Facades\Excel;
 
 class ExcelExpoter extends AbstractExporter

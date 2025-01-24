@@ -5,7 +5,7 @@
 在`app/Admin/bootstrap.php`加入下面的代码来设置网站的favicon：
 
 ```php
-use Elegant\Utils\Admin;
+use Elegance\Admin\Admin;
 
 Admin::favicon('/your/favicon/path');
 ```
@@ -30,7 +30,7 @@ Admin::js('https://cdn.bootcss.com/vue/2.6.10/vue.min.js');
 如果你要在当前的页面加入一段JS脚本代码，可以使用`Admin::script()`
 
 ```php
-use Elegant\Utils\Admin;
+use Elegance\Admin\Admin;
 
 Admin::script('console.log("hello world");');
 ```
@@ -42,7 +42,7 @@ Admin::script('console.log("hello world");');
 如果你要在当前的页面加入一段CSS代码，可以使用`Admin::style()`
 
 ```php
-use Elegant\Utils\Admin;
+use Elegance\Admin\Admin;
 
 Admin::style('.form-control {margin-top: 10px;}');
 ```
@@ -54,7 +54,7 @@ Admin::style('.form-control {margin-top: 10px;}');
 如果你要在当前的页面加入一段HTML代码，可以使用`Admin::html()`
 
 ```php
-use Elegant\Utils\Admin;
+use Elegance\Admin\Admin;
 
 Admin::html('<template>...</template>');
 ```

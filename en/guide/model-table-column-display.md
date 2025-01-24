@@ -124,7 +124,7 @@ $table->column('content')->view('content');
 如果一行的字段比较多，可以通过列展开功能，来隐藏过多的内容。通过点击列来展开显示，或者点击展开相关的其它数据，比如下面的例子，用来展开一条文章下的10条最新评论：
 
 ```php
-use Elegant\Utils\Widgets\Table;
+use Elegance\Admin\Widgets\Table;
 
 $table->column('title', '标题')->expand(function ($model) {
 
@@ -440,7 +440,7 @@ $table->column('status')->using([
 namespace App\Admin\Actions\Document;
 
 use App\Models\Document;
-use Elegant\Utils\Actions\RowAction;
+use Elegance\Admin\Actions\RowAction;
 
 class StarDocument extends RowAction
 {

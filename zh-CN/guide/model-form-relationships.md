@@ -317,8 +317,8 @@ $form->select('author_id')->options(User::all()->pluck('name', 'id'));
 namespace App\Admin\Selectable;
 
 use App\Models\User;
-use Elegant\Utils\Table\Filter;
-use Elegant\Utils\Table\Selectable;
+use Elegance\Admin\Table\Filter;
+use Elegance\Admin\Table\Selectable;
 
 class Users extends Selectable
 {

@@ -22,7 +22,7 @@
 
 `laravel-admin`的布局可参考后台首页的布局文件[HomeController.php](https://github.com/explore-pu/laravel-admin/blob/main/src/Console/stubs/HomeController.stub)的`index()`方法。
 
-`Elegant\Utils\Layout\Content`类用来实现内容区的布局。`Content::body($content)`方法用来添加页面内容：
+`Elegance\Admin\Layout\Content`类用来实现内容区的布局。`Content::body($content)`方法用来添加页面内容：
 
 一个简单的后台页面代码如下：
 
@@ -66,7 +66,7 @@ public function index(Content $content)
 
 ```php
 use App\Models\Product;
-use Elegant\Utils\Layout\Content;
+use Elegance\Admin\Layout\Content;
 
 class ProductController
 {

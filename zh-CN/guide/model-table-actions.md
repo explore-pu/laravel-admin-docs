@@ -68,7 +68,7 @@ $table->actions(function ($actions) {
 
 namespace App\Admin\Extensions;
 
-use Elegant\Utils\Admin;
+use Elegance\Admin\Admin;
 
 class CheckRow
 {

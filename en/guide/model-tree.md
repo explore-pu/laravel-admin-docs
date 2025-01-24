@@ -23,7 +23,7 @@ categories
 
 namespace App\Models\Demo;
 
-use Elegant\Utils\Traits\ModelTree;
+use Elegance\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
@@ -41,7 +41,7 @@ class Category extends Model
 
 namespace App\Models\Demo;
 
-use Elegant\Utils\Traits\ModelTree;
+use Elegance\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
@@ -72,8 +72,8 @@ namespace App\Admin\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
-use Elegant\Utils\Tree;
-use Elegant\Utils\Layout\Content;
+use Elegance\Admin\Tree;
+use Elegance\Admin\Layout\Content;
 
 class CategoryController extends Controller
 {

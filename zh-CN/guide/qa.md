@@ -17,7 +17,7 @@
 打开`app/Admin/bootstrap.php`，加入下面的代码：
 
 ```php
-use Elegant\Utils\Facades\Admin;
+use Elegance\Admin\Facades\Admin;
 
 Admin::disablePjax();
 ```
@@ -78,10 +78,10 @@ a标签上添加`target="_blank"`, 用新页面打开避免使用pjax加载页�
 
 请先阅读 https://learnku.com/docs/laravel/7.x/upgrade/7445#date-serialization
 
-如果想使用默认的`2020-03-04 16:11:00`格式，也可以在你的模型里面引入`Elegant\Utils\Traits\DefaultDatetimeFormat`
+如果想使用默认的`2020-03-04 16:11:00`格式，也可以在你的模型里面引入`Elegance\Admin\Traits\DefaultDatetimeFormat`
 
 ```php
-use Elegant\Utils\Traits\DefaultDatetimeFormat;
+use Elegance\Admin\Traits\DefaultDatetimeFormat;
 
 class User extends Model
 {

@@ -9,8 +9,8 @@
 
 namespace App\Admin\Extensions\Tools;
 
-use Elegant\Utils\Admin;
-use Elegant\Utils\Table\Tools\AbstractTool;
+use Elegance\Admin\Admin;
+use Elegance\Admin\Table\Tools\AbstractTool;
 use Illuminate\Support\Facades\Request;
 
 class UserGender extends AbstractTool
@@ -100,7 +100,7 @@ $table->tools(function ($tools) {
 
 namespace App\Admin\Extensions\Tools;
 
-use Elegant\Utils\Table\Tools\BatchAction;
+use Elegance\Admin\Table\Tools\BatchAction;
 
 class ReleasePost extends BatchAction
 {

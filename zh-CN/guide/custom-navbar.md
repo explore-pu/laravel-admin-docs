@@ -3,9 +3,9 @@
 可以在顶部导航条上添加html元素, 打开`app/Admin/bootstrap.php`：
 
 ```php
-use Elegant\Utils\Facades\Admin;
+use Elegance\Admin\Facades\Admin;
 
-Admin::navbar(function (\Elegant\Utils\Widgets\Navbar $navbar) {
+Admin::navbar(function (\Elegance\Admin\Widgets\Navbar $navbar) {
 
     $navbar->left('html...');
 

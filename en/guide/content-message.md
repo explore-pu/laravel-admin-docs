@@ -29,7 +29,7 @@ admin_toastr('Message...', 'success', ['timeOut' => 5000]);
 
 namespace App\Admin\Controllers;
 
-use Elegant\Utils\Layout\Content;
+use Elegance\Admin\Layout\Content;
 use App\Http\Controllers\Controller;
 
 class PostController extends Controller

@@ -7,7 +7,7 @@
 > 表单布局使用了栅格布局，`$row`是自动分配宽度，`$column` 将宽度分为12份，需要几份自己决定
 
 ```php
-use Elegant\Utils\Form;
+use Elegance\Admin\Form;
 
 $form->row(function (Form\Layout\Row $row) {
     $row->text('text', 'Text');

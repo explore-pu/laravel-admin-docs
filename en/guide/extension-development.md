@@ -15,7 +15,7 @@
 :::
 
 ```bash
-php artisan admin:extend laravel-admin-utils/phpinfo --namespace=Elegant\\Utils\\PHPInfo
+php artisan admin:extend laravel-admin-utils/phpinfo --namespace=Elegance\\Admin\\PHPInfo
 ```
 
 其中`laravel-admin-utils/phpinfo`是包名，`namespace`选项是这个包使用的顶级命名空间，运行这个命令之后, 将会在在config/admin.php中设置的扩展目录中生成目录`laravel-admin-utils/phpinfo`和下面的文件结构
@@ -73,12 +73,12 @@ php artisan admin:extend laravel-admin-utils/phpinfo --namespace=Elegant\\Utils\
 
 ```php
 <?php
-use Elegant\Utils\PHPInfo\Http\Controllers\PHPInfoController;
+use Elegance\Admin\PHPInfo\Http\Controllers\PHPInfoController;
 
 Route::get('phpinfo', PHPInfoController::class.'@index');
 ```
 
-访问路径`phpinfo`，将会由`Elegant\Utils\PHPInfo\Http\Controllers\PHPInfoController`控制器的`index`方法来处理这个请求。
+访问路径`phpinfo`，将会由`Elegance\Admin\PHPInfo\Http\Controllers\PHPInfoController`控制器的`index`方法来处理这个请求。
 
 ## 设置扩展属性
 
@@ -87,9 +87,9 @@ Route::get('phpinfo', PHPInfoController::class.'@index');
 ```php
 <?php
 
-namespace Elegant\Utils\PHPInfo;
+namespace Elegance\Admin\PHPInfo;
 
-use Elegant\Utils\Extension;
+use Elegance\Admin\Extension;
 
 class PHPInfo extends Extension
 {
@@ -114,9 +114,9 @@ class PHPInfo extends Extension
 ```php
 <?php
 
-namespace Elegant\Utils\PHPInfo;
+namespace Elegance\Admin\PHPInfo;
 
-use Elegant\Utils\Extension;
+use Elegance\Admin\Extension;
 
 class PHPInfo extends Extension
 {
@@ -167,12 +167,12 @@ if ($this->app->runningInConsole() && $assets = $extension->assets()) {
 }
 ```
 
-安装完成之后，运行`php artisan vendor:publish --provider=Elegant\Utils\PHPInfo\PHPInfoServiceProvider`，文件将会复制到`public/vendor/laravel-admin-utils/phpinfo`目录中。
+安装完成之后，运行`php artisan vendor:publish --provider=Elegance\Admin\PHPInfo\PHPInfoServiceProvider`，文件将会复制到`public/vendor/laravel-admin-utils/phpinfo`目录中。
 
 我们需要在`laravel-admin`启动的时候在页面里引入这两个文件，需要在`src/PHPInfoServiceProvider.php`的`handle`方法加入下面的代码
 
 ```php
-use use Elegant\Utils\Admin;
+use use Elegance\Admin\Admin;
 
 ...
 
@@ -193,8 +193,8 @@ Admin::booting(function () {
 ```php
 <?php
 
-use Elegant\Utils\Layout\Content;
-use Elegant\Utils\PHPInfo\PHPInfo;
+use Elegance\Admin\Layout\Content;
+use Elegance\Admin\PHPInfo\PHPInfo;
 
 $path = PHPInfo::config('path', 'phpinfo');
 
@@ -236,7 +236,7 @@ Route::get($path, function (Content $content, PHPInfo $info) {
 然后运行`composer require laravel-admin-utils/phpinfo`完成安装，如果有静态文件需要发布，运行下面的命令
 
 ```bash
-php artisan vendor:publish --provider=Elegant\Utils\PHPInfo\PHPInfoServiceProvider
+php artisan vendor:publish --provider=Elegance\Admin\PHPInfo\PHPInfoServiceProvider
 ```
 
 这样就完成了安装，打开`http://localhost/phpinfo`访问这个扩展

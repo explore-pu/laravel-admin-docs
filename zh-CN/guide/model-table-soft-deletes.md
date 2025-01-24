@@ -57,7 +57,7 @@ $table->filter(function () {
 
 namespace App\Admin\Actions\Post;
 
-use Elegant\Utils\Actions\RowAction;
+use Elegance\Admin\Actions\RowAction;
 use Illuminate\Database\Eloquent\Model;
 
 class Restore extends RowAction
@@ -101,7 +101,7 @@ $table->actions(function ($actions) {
 
 namespace App\Admin\Actions\Post;
 
-use Elegant\Utils\Actions\BatchAction;
+use Elegance\Admin\Actions\BatchAction;
 use Illuminate\Database\Eloquent\Collection;
 
 class BatchRestore extends BatchAction

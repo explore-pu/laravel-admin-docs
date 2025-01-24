@@ -2,7 +2,7 @@
 
 安装完成之后，会生成两个配置文件，用来对管理后台进行配置
 
-- 主配置文件`config/elegant-utils/admin.php`
+- 主配置文件`config/admin.php`
 - 启动配置文件`app/Admin/bootstrap.php`
 
 ## 主配置文件
@@ -289,7 +289,7 @@ return [
     | The global Table action display class.
     |--------------------------------------------------------------------------
     */
-    'table_action_class' => \Elegant\Utils\Table\Displayers\DropdownActions::class,
+    'table_action_class' => \Elegance\Admin\Table\Displayers\DropdownActions::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -329,10 +329,10 @@ return [
  * Bootstraper for Admin.
  *
  * Here you can remove builtin form field:
- * Elegant\Utils\Form::forget(['map', 'editor']);
+ * Elegance\Admin\Form::forget(['map', 'editor']);
  *
  * Or extend custom form field:
- * Elegant\Utils\Form::extend('php', PHPEditor::class);
+ * Elegance\Admin\Form::extend('php', PHPEditor::class);
  *
  * Or require js and css assets:
  * Admin::css('/packages/prettydocs/css/styles.css');
@@ -340,5 +340,5 @@ return [
  *
  */
 
-Elegant\Utils\Form::forget(['map', 'editor']);
+Elegance\Admin\Form::forget(['map', 'editor']);
 ```

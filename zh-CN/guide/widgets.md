@@ -2,10 +2,10 @@
 
 ## Box组件
 
-`Elegant\Utils\Widgets\Box`用来生成box组件：
+`Elegance\Admin\Widgets\Box`用来生成box组件：
 
 ```php
-use Elegant\Utils\Widgets\Box;
+use Elegance\Admin\Widgets\Box;
 
 $box = new Box('Box标题', 'Box内容');
 
@@ -38,10 +38,10 @@ echo $box;
 
 ## Collapse组件
 
-`Elegant\Utils\Widgets\Collapse`类用来生成折叠插件：
+`Elegance\Admin\Widgets\Collapse`类用来生成折叠插件：
 
 ```php
-use Elegant\Utils\Widgets\Collapse;
+use Elegance\Admin\Widgets\Collapse;
 
 $collapse = new Collapse();
 
@@ -55,7 +55,7 @@ echo $collapse->render();
 
 ## 表单
 
-`Elegant\Utils\Widgets\Form`类用来快速构建表单：
+`Elegance\Admin\Widgets\Form`类用来快速构建表单：
 
 ```php
 $form = new Form();
@@ -85,10 +85,10 @@ echo $form->render();
 
 ## Infobox组件
 
-`Elegant\Utils\Widgets\InfoBox`类用来生成信息展示块：
+`Elegance\Admin\Widgets\InfoBox`类用来生成信息展示块：
 
 ```php
-use Elegant\Utils\Widgets\InfoBox;
+use Elegance\Admin\Widgets\InfoBox;
 
 $infoBox = new InfoBox('New Users', 'users', 'aqua', '/admin/users', '1024');
 
@@ -99,10 +99,10 @@ echo $infoBox->render();
 
 ## Tab组件
 
-`Elegant\Utils\Widgets\Tab`类用来生成选项卡组件：
+`Elegance\Admin\Widgets\Tab`类用来生成选项卡组件：
 
 ```php
-use Elegant\Utils\Widgets\Tab;
+use Elegance\Admin\Widgets\Tab;
 
 $tab = new Tab();
 
@@ -117,10 +117,10 @@ echo $tab->render();
 
 ## Table
 
-`Elegant\Utils\Widgets\Table`类用来生成表格：
+`Elegance\Admin\Widgets\Table`类用来生成表格：
 
 ```php
-use Elegant\Utils\Widgets\Table;
+use Elegance\Admin\Widgets\Table;
 
 // table 1
 $headers = ['Id', 'Email', 'Name', 'Company'];

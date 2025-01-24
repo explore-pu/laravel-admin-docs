@@ -9,7 +9,7 @@ form表单内置的`map`和`editor`组件通过cdn的方式引用了前端文件
 ```php
 <?php
 
-use Elegant\Utils\Form;
+use Elegance\Admin\Form;
 
 Form::forget('map');
 Form::forget('editor');
@@ -36,7 +36,7 @@ Form::forget(['map', 'editor']);
 
 namespace App\Admin\Extensions;
 
-use Elegant\Utils\Form\Field;
+use Elegance\Admin\Form\Field;
 
 class WangEditor extends Field
 {
@@ -98,7 +98,7 @@ EOT;
 <?php
 
 use App\Admin\Extensions\WangEditor;
-use Elegant\Utils\Form;
+use Elegance\Admin\Form;
 
 Form::extend('editor', WangEditor::class);
 ```
@@ -120,7 +120,7 @@ $form->editor('body');
 
 namespace App\Admin\Extensions\Form;
 
-use Elegant\Utils\Form\Field;
+use Elegance\Admin\Form\Field;
 
 class CKEditor extends Field
 {
@@ -163,7 +163,7 @@ class CKEditor extends Field
 
 ```php
 use App\Admin\Extensions\Form\CKEditor;
-use Elegant\Utils\Form;
+use Elegance\Admin\Form;
 
 Form::extend('ckeditor', CKEditor::class);
 ```
@@ -187,7 +187,7 @@ $form->ckeditor('content');
 
 namespace App\Admin\Extensions;
 
-use Elegant\Utils\Form\Field;
+use Elegance\Admin\Form\Field;
 
 class PHPEditor extends Field
 {
@@ -253,7 +253,7 @@ EOT;
 <?php
 
 use App\Admin\Extensions\PHPEditor;
-use Elegant\Utils\Form;
+use Elegance\Admin\Form;
 
 Form::extend('php', PHPEditor::class);
 ```

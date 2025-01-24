@@ -27,7 +27,7 @@ $router->post('users/{user}/replicate', 'UserController@replicate')
 
 ```php
 namespace App\Admin\Controllers;
-use Elegant\Utils\Controllers\AdminController;
+use Elegance\Admin\Controllers\AdminController;
 use App\Models\User;
 
 class UserController  extends AdminController
@@ -59,9 +59,9 @@ class UserController  extends AdminController
 ```php
 namespace App\Admin\Actions;
     
-use Elegant\Utils\Actions\RowAction;
-//use Elegant\Utils\Actions\TreeAction;// 模型树操作请继承此类
-//use Elegant\Utils\Actions\NavAction;// 头部导航条操作请继承此类
+use Elegance\Admin\Actions\RowAction;
+//use Elegance\Admin\Actions\TreeAction;// 模型树操作请继承此类
+//use Elegance\Admin\Actions\NavAction;// 头部导航条操作请继承此类
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
     
@@ -103,7 +103,7 @@ class Replicate extends RowAction
      * 这是方法二的逻辑
      * @param Model $model
      *
-     * @return \Elegant\Utils\Actions\Response
+     * @return \Elegance\Admin\Actions\Response
      */
     //public function handle(Model $model)
     //{

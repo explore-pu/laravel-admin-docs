@@ -3,7 +3,7 @@
 ## 查看当前版本
 
 ```shell
-composer show elegant-utils/laravel-admin
+composer show elegance/laravel-admin
 
 // or 
 
@@ -13,19 +13,19 @@ php artisan admin
 ## 更新到最新版本
 
 ```shell
-composer update elegant-utils/laravel-admin
+composer update elegance/laravel-admin
 ```
 
 ## 更新到开发版本
 
 ```shell
-composer require elegant-utils/laravel-admin:dev-master
+composer require elegance/laravel-admin:dev-master
 ```
 
 ## 更新指定版本
 
 ```shell
-composer update elegant-utils/laravel-admin:1.0.3
+composer update elegance/laravel-admin:1.0.3
 ```
 
 ::: tip 注意

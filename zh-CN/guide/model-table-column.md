@@ -175,7 +175,7 @@ $table->column('images')->display(function ($images) {
 在`app/Admin/bootstrap.php`加入以下代码:
 
 ```php
-use Elegant\Utils\Table\Column;
+use Elegance\Admin\Table\Column;
 
 Column::extend('color', function ($value, $color) {
     return "<span style='color: $color'>$value</span>";
@@ -197,8 +197,8 @@ $table->column('title')->color('#ccc');
 
 namespace App\Admin\Extensions;
 
-use Elegant\Utils\Admin;
-use Elegant\Utils\Table\Displayers\AbstractDisplayer;
+use Elegance\Admin\Admin;
+use Elegance\Admin\Table\Displayers\AbstractDisplayer;
 
 class Popover extends AbstractDisplayer
 {
@@ -227,7 +227,7 @@ EOT;
 然后在`app/Admin/bootstrap.php`注册扩展类：
 
 ```php
-use Elegant\Utils\Table\Column;
+use Elegance\Admin\Table\Column;
 use App\Admin\Extensions\Popover;
 
 Column::extend('popover', Popover::class);

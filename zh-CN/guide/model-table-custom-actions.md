@@ -25,7 +25,7 @@ php artisan admin:action Post\\Replicate --table-row --name="复制"
 
 namespace App\Admin\Actions\Post;
 
-use Elegant\Utils\Actions\RowAction;
+use Elegance\Admin\Actions\RowAction;
 use Illuminate\Database\Eloquent\Model;
 
 class Replicate extends RowAction
@@ -77,9 +77,9 @@ $table->actions(function ($actions) {
 ```php
 <?php
 
-namespace Elegant\Utils\Table\Actions;
+namespace Elegance\Admin\Table\Actions;
 
-use Elegant\Utils\Actions\RowAction;
+use Elegance\Admin\Actions\RowAction;
 
 class Comments extends RowAction
 {
@@ -112,7 +112,7 @@ php artisan admin:action Post\\BatchReplicate --table-batch --name="批量复制
 
 namespace App\Admin\Actions\Post;
 
-use Elegant\Utils\Actions\BatchAction;
+use Elegance\Admin\Actions\BatchAction;
 use Illuminate\Database\Eloquent\Collection;
 
 class BatchReplicate extends BatchAction
@@ -290,7 +290,7 @@ public function form()
 
 namespace App\Admin\Actions\Post;
 
-use Elegant\Utils\Actions\BatchAction;
+use Elegance\Admin\Actions\BatchAction;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 
@@ -351,7 +351,7 @@ php artisan admin:action Post\\ImportPost --name="导入数据"
 
 namespace App\Admin\Actions\Post;
 
-use Elegant\Utils\Actions\Action;
+use Elegance\Admin\Actions\Action;
 use Illuminate\Http\Request;
 
 class ImportPost extends Action
@@ -381,7 +381,7 @@ HTML;
 
 namespace App\Admin\Actions\Post;
 
-use Elegant\Utils\Actions\Action;
+use Elegance\Admin\Actions\Action;
 use Illuminate\Http\Request;
 
 class ImportPost extends Action
@@ -496,7 +496,7 @@ return $this->response()->success('Success！')->timeout(3000)->refresh();
 也可以通过在模型中定义`actionAuthorize`方法来控制权限, 通过传入的操作类名，来控制操作权限
 
 ```php
-use Elegant\Utils\Table\Actions\Delete;
+use Elegance\Admin\Table\Actions\Delete;
 
 class Post extends Model
 {
@@ -523,7 +523,7 @@ class Post extends Model
 在指定页面开启：
 
 ```php
-use Elegant\Utils\Table\Displayers\ContextMenuActions;
+use Elegance\Admin\Table\Displayers\ContextMenuActions;
 
 $table->setActionClass(ContextMenuActions::class);
 ```
@@ -531,19 +531,19 @@ $table->setActionClass(ContextMenuActions::class);
 或者在`config/admin.php`添加配置全局开启：
 
 ```php
-'table_action_class' => \Elegant\Utils\Table\Displayers\ContextMenuActions::class,
+'table_action_class' => \Elegance\Admin\Table\Displayers\ContextMenuActions::class,
 ```
 
 ## 下拉菜单
 
 ```php
-'table_action_class' => \Elegant\Utils\Table\Displayers\DropdownActions::class,
+'table_action_class' => \Elegance\Admin\Table\Displayers\DropdownActions::class,
 ```
 
 或者在每个表格中单独开启：
 
 ```php
-use Elegant\Utils\Table\Displayers\DropdownActions;
+use Elegance\Admin\Table\Displayers\DropdownActions;
 
 $table->setActionClass(DropdownActions::class);
 ```
@@ -560,13 +560,13 @@ $table->setActionClass(DropdownActions::class);
 
 ```php
 // 最原始的`按钮图标`形式
-'table_action_class' => \Elegant\Utils\Table\Displayers\ButtonActions::class,
+'table_action_class' => \Elegance\Admin\Table\Displayers\ButtonActions::class,
 
 // 使用`下拉菜单`形式
-'table_action_class' => \Elegant\Utils\Table\Displayers\DropdownActions::class,
+'table_action_class' => \Elegance\Admin\Table\Displayers\DropdownActions::class,
 
 // 使用`右键菜单`形式
-'table_action_class' => \Elegant\Utils\Table\Displayers\ContextMenuActions::class,
+'table_action_class' => \Elegance\Admin\Table\Displayers\ContextMenuActions::class,
 ```
 
 ## 单独配置
@@ -574,9 +574,9 @@ $table->setActionClass(DropdownActions::class);
 也可以给每一个表格指定不同的形式
 
 ```php
-use Elegant\Utils\Table\Displayers\ButtonActions;
-use Elegant\Utils\Table\Displayers\DropdownActions;
-use Elegant\Utils\Table\Displayers\ContextMenuActions;
+use Elegance\Admin\Table\Displayers\ButtonActions;
+use Elegance\Admin\Table\Displayers\DropdownActions;
+use Elegance\Admin\Table\Displayers\ContextMenuActions;
 
 // 最原始的`按钮图标`形式
 $table->setActionClass(ButtonActions::class);

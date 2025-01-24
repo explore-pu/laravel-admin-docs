@@ -9,7 +9,7 @@
 
 namespace App\Admin\Extensions\Show;
 
-use Elegant\Utils\Show\AbstractField;
+use Elegance\Admin\Show\AbstractField;
 
 class UnSerialize extends AbstractField
 {
@@ -24,7 +24,7 @@ class UnSerialize extends AbstractField
 然后在`app/Admin/bootstrap.php`中注册扩展类
 
 ```php
-use Elegant\Utils\Show;
+use Elegance\Admin\Show;
 use App\Admin\Extensions\Show\UnSerialize;
 
 Show::extend('unserialize', UnSerialize::class);
@@ -38,7 +38,7 @@ $show->column()->unserialize('xxx');
 
 传入`unserialize()`方法的参数会按顺序传入`UnSerialize::render()`方法中。
 
-在父类`Elegant\Utils\Show\AbstractField`中可以看到几个常用的属性
+在父类`Elegance\Admin\Show\AbstractField`中可以看到几个常用的属性
 
 ```php
     /**
