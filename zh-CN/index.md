@@ -37,9 +37,9 @@ features:
 
 <script setup>
 import { onMounted } from 'vue';
-import { fetchReleaseTag } from '/.vitepress/utils/fetchReleaseTag';
+import { fetchLatestTag } from '/.vitepress/utils/fetchLatestTag';
 
 onMounted(() => {
-  fetchReleaseTag()
+  fetchLatestTag()
 })
 </script>
